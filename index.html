@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería -Climas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1 class="main-title">Climas</h1>
+
+  <div class="gallery-container">
+    <button class="nav-btn prev" onclick="prevSlide()">&#10094;</button>
+
+    <div class="gallery" id="gallery">
+      <div class="slide active">
+        <div class="img-container">
+          <img src="https://i.ibb.co/kgGvPdqQ/Paisajes-de-Invierno-Winter-Landscapes-03.jpg" alt="Invierno">
+        </div>
+        <div class="slide-caption">Invierno</div>
+      </div>
+      <div class="slide">
+        <div class="img-container">
+          <img src="https://i.ibb.co/9mWs9Zw9/verano.jpg" alt="Verano">
+        </div>
+        <div class="slide-caption">Verano</div>
+      </div>
+      <div class="slide">
+        <div class="img-container">
+          <img src="https://i.ibb.co/CKXXXh3y/oto.jpg" alt="Otoño">
+        </div>
+        <div class="slide-caption">Otoño</div>
+      </div>
+      <div class="slide">
+        <div class="img-container">
+          <img src="https://i.ibb.co/bMpznRn3/primavera.jpg" alt="Primavera">
+        </div>
+        <div class="slide-caption">Primavera</div>
+      </div>
+    </div>
+
+    <button class="nav-btn next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <div class="dots-container">
+    <span class="dot active" onclick="goToSlide(0)"></span>
+    <span class="dot" onclick="goToSlide(1)"></span>
+    <span class="dot" onclick="goToSlide(2)"></span>
+    <span class="dot" onclick="goToSlide(3)"></span>
+  </div>
+
+  <div class="botones-navegacion">
+    <button onclick="prevSlide()">Volver</button>
+    <button onclick="nextSlide()">Seguir</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
